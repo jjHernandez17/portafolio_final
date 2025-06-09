@@ -1,0 +1,211 @@
+
+*{                  /* el reset para que no hayan margenes predeterminadas de la pagina  */
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    
+}
+
+
+:root {                                         
+     --color-principal: rgba(42, 7, 109, 0.986); /* aca guardamos el color tematico del portafolio */
+     --color-secundario:rgba(43, 7, 109, 0.603);                /* para fondos de contenedores (se usó pocas veces) */
+     --color-terciario: rgba(255, 255, 255, 0.363);     /*Tambien lo utilizamos para variar un poco el color de los contenedores  */
+     --color-cuartario: rgb(255, 255, 255);             /* lo usamos para bordes  */
+     --letra: Montserrat;                       /* fuente de letra de toda la pagina */
+     --color-letra:white;                   /*color de letra principal para que contrastara con el color tematico  */
+     --color-letra-secundario: black;       /*para la animacion de las opciones del menu  */
+}
+body {
+    font-family: var(--letra);
+    background-image: url(../imagenes/fondo.png);
+    overflow-x: hidden;
+}
+
+.encabezado {                   
+    background-color:var(--color-principal) ;
+    padding: 50px;
+    display: flex;
+    color: var(--color-letra);
+    justify-content: center;
+    
+}
+
+.linea {
+    background-color: var(--color-cuartario);
+    padding: 20px;
+}
+
+.linea-menu {
+    display: flex;
+    list-style: none;
+    gap:50px;
+    justify-content: center;
+    
+
+}
+
+.linea-menu a {
+    text-decoration: none;
+    color: var(--color-principal);
+
+}
+
+.linea-menu a:hover {
+    color: var(--color-letra-secundario);
+}
+.contenedor-foto{
+    width:15%;
+}
+
+.seccion-presentacion{
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    align-items: center;
+    gap: 40px;
+
+}
+
+.presentacion {
+    width: 50%;
+    background-color: var(--color-secundario);
+    color: var(--color-letra);
+    padding: 40px;
+    border: solid 2px white;
+    font-size: 18px;
+}
+
+.foto-juan {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 30px rgb(255, 255, 255);
+    transition: transform 0.9s ease;
+}
+.foto-juan:hover {
+    transform: scale(1.3);
+    
+}
+
+.proyectos {
+    display: flex;
+    color: var(--color-principal);
+    flex-direction: column;
+    background-color: var(--color-terciario);
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    align-items: center;
+    gap: 60px;
+}
+
+.proyectos-visualizacion {
+
+    width: 80%;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    justify-content: center;
+    gap: 120px;
+}
+.proyecto {
+    display: flex;
+    border: solid 2px var(--color-cuartario) ;
+    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.9s ease;
+}
+
+.proyecto:hover {
+    transform: scale(1.09);
+}
+
+.proyecto img {
+    width: 100%;
+}
+
+.pie-de-pagina {
+    background-color: var(--color-principal);
+    color: var(--color-letra);
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+
+@media (max-width: 1023px) and (min-width: 768px) {
+    
+    .encabezado {
+        font-size: 20px;
+    }
+
+    .linea {
+        padding: 10px;
+    }
+
+    .linea-menu {
+        font-size: 23px;
+    }
+
+    .contenedor-foto {
+        width: 30%;
+    }
+    .seccion-presentacion {
+        padding: 15px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        gap: 40px;
+    }
+ 
+
+    .presentacion {
+        width: 40%;
+    }
+
+    .proyectos {
+        padding: 25px;
+        gap:20px;
+    }
+
+    .proyectos-visualizacion {
+        gap: 20px;
+        width: 100%;
+    }
+
+    .proyecto {
+        padding: 10px;
+    }
+
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+    .encabezado {
+        font-size: 11px;
+    }
+
+    .contenedor-foto {
+        width: 35%;
+    }
+    .presentacion {
+        font-size: 11px;
+        padding: 10px;
+    }
+
+    .proyectos-visualizacion {
+        gap: 20px;
+        width: 100%;
+        
+    }
+    .proyectos {
+        padding: 15px;
+        gap: 10px;
+        font-size: 10px;
+    }
+
+    .proyecto {
+        padding: 5px;
+    }
+}
+
+

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Prueba</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Viga&family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header class="encabezado">                                         <!--Se crea un contenedor para el titulo de la pagina   -->
+        <h1>PORTAFOLIO PRUEBA FINAL</h1>
+    </header>
+    <nav class="linea">
+             <ul class="linea-menu">                                  <!--acá se crea el menu para dirigirse a ciertas secciones de la pagina -->
+            <li><a href="#presentacion">Presentacion</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>         
+            <li><a href="#footer">Contacto</a></li>
+        </ul>
+
+    </nav>
+    <main>                                          <!--El main representa el objetivo de la pagina  -->
+        <section id="presentacion" class="seccion-presentacion">                    <!--se crea el contenedor para poder hacer posible el flexbox, centrarlo ETC  -->
+            <picture class="contenedor-foto">                       <!--Creo el contenedor en la etiqueta semantica para una imagen  -->
+                <img class="foto-juan" src="imagenes/img_perfil.png" alt="foto de juan jose ">
+            </picture>
+
+            <section class="presentacion">                              <!--Se crea el contenedor para darle fondo margenes etc. a este flexbox  -->
+                <h3>JUAN JOSE HERNANDEZ VARGAS</h3>
+                <p>Hola bienvenido a mi portafolio,  en el cual se evidenciarán algunos de mis proyectos trabajados a lo largo  del modulo 2, en cada uno de ellos se nota el amor y el esfuerzo que tengo por el tema del desarrollo web desarrollandolo mediante buenas practicas, con creatividad y mucho esfuerzo</p>
+            </section>
+        </section>
+
+        
+        <section id="proyectos" class="proyectos">                                          <!--Se crea el contenedor para aplicarle flexbox al h2 y a la section que contiene los proyectos  -->
+            
+            <h2>A CONTINUACION ENCONTRARÁS MIS PROYECTOS</h2>
+            <section class="proyectos-visualizacion">                                           <!--Se crea el contenedor para aplicarle el grid y quede una tabla con columnas y filas donde estan ubicados los proyectos  -->
+
+                <div class="proyecto">                                  <!--Cada proyecto es un flexbox  -->
+                    <a href="https://jjhernandez17.github.io/alkosto/" target="_blank"><img src="imagenes/alkosto.png" alt=""></a>
+                    <h4>Alkosto</h4>
+                </div>
+
+                <div class="proyecto">
+                    <a href="https://jjhernandez17.github.io/cambios_envigado/" target="_blank"><img src="imagenes/cambios envigado.png" alt=""></a>
+                    <h4>Cambios Envigado</h4>
+                </div>
+
+                <div class="proyecto">
+                    <a href="https://jjhernandez17.github.io/actividad2/index.html" target="_blank"><img src="imagenes/web informativa.png" alt=""></a>
+                    <h4> Web Informativa</h4>
+                </div>
+
+                <div class="proyecto">
+                    <a href="https://jjhernandez17.github.io/boletos/" target="_blank"><img src="imagenes/boletos.png" alt=""></a>
+                    <h4> Web Informativa</h4>
+                </div>
+
+            </section>
+
+
+            
+        </section>
+        
+    </main>
+    <footer id="footer" class="pie-de-pagina">                  <!--Se crea el contenedor del footer con la etiqueta semantica propia -->
+        <p>+57 321 789 58 01</p>
+        <p>juanjohervar1708@gmail.com</p>
+        <h5>© portafolio-juan jose hernandez</h5>
+    </footer>
+
+
+
+    
+</body>
+</html>

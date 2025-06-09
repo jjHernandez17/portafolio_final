@@ -209,3 +209,41 @@ body {
 }
 
 
+@media  (max-width: 479px) {
+
+    .encabezado {
+        font-size: 11px;
+    }
+
+    .contenedor-foto {
+        width: 45%;
+    }
+
+    .seccion-presentacion {
+        padding: 40px;
+    }
+    .presentacion {
+        width: 90%;
+        font-size: 11px;
+        padding: 10px;
+    }
+
+    .proyectos-visualizacion {
+        gap: 20px;
+        width: 100%;
+        
+    }
+    .proyectos {
+        padding: 15px;
+        gap: 10px;
+        font-size: 10px;
+    }
+
+    .proyecto {
+        padding: 5px;
+    }
+
+
+}
+
+
